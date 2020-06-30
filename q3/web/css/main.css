@@ -1,0 +1,16 @@
+footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    bottom: 0;
+}
+
+.option {
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.caption {
+    margin: 2em 0 2em 4em;
+}

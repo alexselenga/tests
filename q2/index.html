@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/e4a69aacb3.js" crossorigin="anonymous"></script>
+    <title>Задание 2</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="navHeader" class="navbar bg-dark text-white row sticky-top px-0">
+            <div class="logotip col-auto green-text">LogoTip</div>
+            <div class="col-auto">
+                <ul class="list-inline d-none d-md-block mb-0">
+                    <li class="list-inline-item"><a href="#">О нас</a></li>
+                    <li class="list-inline-item"><a href="#">Новости</a></li>
+                    <li class="list-inline-item"><a href="#">Сотрудничество</a></li>
+                    <li class="list-inline-item"><a href="#">Помощь</a></li>
+                    <li class="list-inline-item"><a href="#">Контакты</a></li>
+                </ul>
+                <button class="d-md-none navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#popupMenu" aria-controls="popupMenu" aria-expanded="false">
+                    <a><i id="burger-icon" class="fa fa-bars"></i></a>
+                </button>
+            </div>
+        </div>
+        <div id="popupMenu" class="row d-md-none collapse bg-dark">
+            <ul class="col list-unstyled w-100">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons">
+            <div class="row justify-content-between pt-2">
+                <div id="user" class="col-md-auto py-3 order-md-5">
+                    <b>Добро пожаловать, <span class="green-text">User Name</span></b>
+                    <br>
+                    <small>
+                        Учетная запись действительна до <span class="font-weight-bolder">2020.12.31 00:00:00</span><br>
+                        <spam class="d-md-none">Ключ активации на устройствах</spam>
+                    </small>
+                </div>
+
+                <div id="pagesButtons" class="col-md-auto order-md-1 d-flex justify-content-center justify-content-md-start">
+                    <a class="btn btn-success btn-sm" href="#" role="button">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Страница 1</span>
+                    </a>
+                    <a class="btn btn-success btn-sm" href="#" role="button">
+                        <i class="fas fa-users"></i>
+                        <span>Страница 2</span>
+                    </a>
+                    <a class="btn btn-success btn-sm" href="#" role="button">
+                        <i class="fas fa-sticky-note"></i>
+                        <span>Страница 3</span>
+                    </a>
+                    <a class="btn btn-success btn-sm" href="#" role="button">
+                        <i class="fas fa-bolt"></i>
+                        <span>Страница 4</span>
+                    </a>
+                </div>
+
+                <div class="col-auto order-md-2 d-none d-md-flex">
+                    <a class="btn btn-outline-success btn-sm" href="#" role="button">
+                        <i class="fas fa-cog"></i>
+                        Личный кабинет
+                    </a>
+                    <a class="btn btn-outline-success btn-sm" href="#" role="button">
+                        <i class="fas fa-door-open"></i>
+                        Выход
+                    </a>
+                </div>
+
+                <div class="w-100 order-md-3"></div>
+
+                <div id="title" class="col order-md-4 green-text">
+                    <h1>Заголовок страницы</h1>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="breadcrumb">
+            <ol class="row breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="text-dark fas fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Страница 2</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div id="sideBar" class="col-auto d-none d-md-block">
+                <nav class="nav flex-column align-content-start">
+                    <a class="nav-link" href="#"><i class="fas fa-chevron-left"></i>Пункт меню 1</a>
+
+                    <a class="nav-link" href="#items2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="items2">
+                        <i class="fas fa-list-alt"></i>Пункт меню 2
+                    </a>
+                    <div class="collapse show sub-items-1 bg-light rounded" id="items2">
+                        <a class="nav-link" href="#"><i class="far fa-grin-beam-sweat"></i>Подпункт 1</a>
+                        <a class="nav-link" href="#"><i class="far fa-grin-squint"></i>Подпункт 2</a>
+                        <a class="nav-link" href="#"><i class="far fa-grin-squint-tears"></i>Подпункт 3</a>
+                    </div>
+
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i>Пункт меню 3</a>
+                    <a class="nav-link" href="#"><i class="fas fa-check"></i>Пункт меню 4</a>
+                    <a class="nav-link" href="#"><i class="fas fa-cog"></i>Пункт меню 5</a>
+                </nav>
+            </div>
+
+            <div id="content" class="col">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque beatae cum debitis deleniti ea eos ex fugiat illum in, ipsam ipsum iusto labore laudantium nulla odit omnis praesentium quos, rerum sunt, tempora ut voluptate. Dignissimos, quae, repellat. Alias, laboriosam similique. Ad ducimus neque nobis odit, quia voluptas. Ab accusantium alias aliquam animi aspernatur beatae debitis distinctio dolorem dolorum esse et facilis hic inventore labore minima molestiae necessitatibus nemo omnis optio, possimus praesentium quasi recusandae reiciendis sequi totam ut veritatis voluptate! Ad alias animi blanditiis consequuntur, deleniti doloremque et ex illum impedit nam neque nihil nisi officia pariatur perferendis quia, quis. Aperiam deserunt est eveniet exercitationem in incidunt nam odit qui, reiciendis repudiandae saepe soluta totam veritatis! Alias, aliquid doloremque et, inventore magnam, molestiae nemo nisi placeat provident rem sunt voluptatum! Architecto assumenda consequatur consequuntur debitis distinctio dolores dolorum enim est excepturi expedita facere id inventore ipsum non numquam omnis perferendis quaerat, quidem quo reprehenderit totam vel vero. Atque beatae, blanditiis cum cupiditate esse expedita explicabo fuga hic id in inventore iusto laborum minus nam neque, nulla odit optio perspiciatis quae quia reiciendis repellat soluta tempora temporibus voluptates? Ab aliquam aut blanditiis deleniti ducimus eaque exercitationem facere fuga impedit labore magni molestiae mollitia nobis non omnis perspiciatis quas, quos sit sunt unde velit vero vitae voluptates! Accusamus ad aut deserunt dignissimos eos esse, excepturi facilis id perferendis quos ratione, rem, repudiandae vel. Accusantium at, autem distinctio dolores eaque enim eos error est facilis itaque numquam, officiis provident temporibus velit veritatis voluptate, voluptatibus! Adipisci hic inventore libero tempora tempore vel veritatis? Adipisci aliquid doloremque dolorum eaque eligendi enim eos excepturi harum magni minus necessitatibus quia, quidem reiciendis similique temporibus tenetur voluptas? Assumenda consequatur, distinctio dolore dolorem eaque eos, fugiat id ipsam iste magnam, magni nisi perferendis quae sed suscipit. Autem dolores ducimus, earum enim laudantium nam officia porro praesentium qui, quibusdam quisquam rem saepe velit veritatis vero. Aliquam asperiores beatae distinctio dolore, dolorem earum, ipsam magnam magni, officiis perspiciatis placeat similique sit veritatis. Assumenda eius id nostrum numquam obcaecati pariatur perspiciatis quibusdam repellendus reprehenderit voluptatem! Asperiores at commodi natus optio quam quasi quidem rem, tenetur unde vel. Beatae deserunt eius ex, minus praesentium soluta tempora. Aperiam, error ex ipsum laudantium minus praesentium quam soluta tempore. A, adipisci animi consectetur debitis enim error eum illum, molestiae necessitatibus nisi similique temporibus voluptatum. Ab ad architecto consequatur expedita in iste, nulla pariatur qui quidem quisquam quos reiciendis sapiente similique sit tempora totam voluptates. Aspernatur, at consequuntur cumque exercitationem illo pariatur porro, quas quasi quidem sequi, velit voluptatem voluptatibus! Ad adipisci, commodi corporis dolore dolores eaque enim est illo in ipsum iusto labore laudantium magni maiores minus neque nesciunt non nulla, placeat provident quaerat quasi quis repellat rerum sapiente, sequi suscipit tempora totam unde vitae? Assumenda quos rem repudiandae similique sit. Accusantium animi architecto aut commodi cum cumque, doloremque eligendi est illo, iure labore laborum neque, nesciunt nihil nostrum obcaecati omnis perspiciatis placeat praesentium quod recusandae rem repellendus repudiandae saepe sequi sint sunt tenetur velit.
+            </div>
+        </div>
+
+        <div id="navFooter" class="d-md-none navbar bg-dark text-muted row sticky-bottom justify-content-center">
+            <div class="col-8 d-flex justify-content-between">
+                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                <div class="dropdown dropup">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-list-alt"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#"><i class="far fa-grin-beam-sweat"></i>Подпункт 1</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-grin-squint"></i>Подпункт 2</a>
+                        <a class="dropdown-item" href="#"><i class="far fa-grin-squint-tears"></i>Подпункт 3</a>
+                    </div>
+                </div>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-check"></i></a>
+                <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+    <script>
+        $(function() {
+            $('#navHeader button').click(function() {
+                $(this).find('i').toggleClass('fa-bars').toggleClass('fa-times');
+            });
+        });
+    </script>
+</html>

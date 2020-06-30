@@ -1,0 +1,173 @@
+$green: #0A0;
+$green2: #080;
+
+.green-text {
+  color: $green;
+}
+
+.breadcrumb {
+  padding: 0.4rem 1rem;
+}
+.breadcrumb-item.active {
+  color: $green2;
+}
+
+#navHeader {
+  .logotip {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .list-inline-item {
+    text-transform: uppercase;
+  }
+
+  .list-inline-item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  a {
+    color: white;
+  }
+
+  .navbar-toggler i {
+    font-size: 2rem;
+  }
+}
+
+#popupMenu {
+  position: sticky;
+  top: 64px;
+  z-index: 2;
+  text-transform: uppercase;
+  border-top: 1px solid gray;
+
+  li {
+    line-height: 3rem;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  z-index: 1020;
+}
+
+#title {
+  h1 {
+    text-align: center;
+  }
+}
+
+.btn {
+  margin: 4px 2px;
+}
+
+#user {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+#pagesButtons {
+  .btn {
+    border-radius: 8px;
+  }
+
+  span {
+    display: none;
+  }
+
+  i {
+    font-size: 2.4rem;
+    width: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #pagesButtons {
+    .btn {
+      border-radius: 2px;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    i {
+      font-size: 0.875rem;
+      width: 20px;
+    }
+  }
+
+  #user {
+    text-align: right;
+    font-size: 1rem;
+  }
+}
+
+#navFooter {
+  padding: 10px 0;
+  font-size: 1.5rem;
+
+  >div>a, >div>.dropdown>a {
+    color: white;
+  }
+
+  .dropup .dropdown-toggle::after {
+    margin-left: -0.5em;
+    vertical-align: 0.5em;
+    border-right: 0.25em solid transparent;
+    border-bottom: 0.25em solid;
+    border-left: 0.25em solid transparent;
+  }
+
+  i {
+    width: 1.5em;
+  }
+}
+
+#sideBar {
+  width: 20%;
+  min-width: 180px;
+  max-width: 320px;
+
+  .nav-link {
+    display: block;
+    padding: 0 0 4px;
+    color: gray;
+    line-height: 2em;
+
+    &[data-toggle="collapse"]::after {
+      display: inline-block;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0;
+      border-left: 0.3em solid transparent;
+    }
+  }
+
+  .sub-items-1 {
+    padding-left: 1.2em;
+    font-size: 0.9em;
+  }
+
+  i {
+    width: 1.5em;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: lightgreen !important;
+}
